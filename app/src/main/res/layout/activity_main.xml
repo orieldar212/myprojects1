@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4CA451"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,34 +14,26 @@
         android:fontFamily="sans-serif-black"
         android:shadowColor="#FBFCFF"
         android:text="help me!"
-        android:textColor="#0E1B66"
+        android:textColor="#673AB7"
         android:textColorLink="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.122" />
+        app:layout_constraintVertical_bias="0.074" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="600dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+
 
         <ImageView
             android:id="@+id/imageview_egg"
-            android:layout_width="223dp"
-            android:layout_height="298dp"
+            android:layout_width="185dp"
+            android:layout_height="259dp"
             android:onClick="knock"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.596"
-            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription=""
             app:srcCompat="@drawable/green_egg"
-            tools:layout_editor_absoluteY="54dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="93dp" />
 
         <TextView
             android:id="@+id/textview_counter"
@@ -66,14 +59,26 @@
             android:textColorLink="@color/white"
             app:rippleColor="@color/white"
             app:strokeColor="@color/white"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="158dp"
-            tools:layout_editor_absoluteY="443dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="443dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="110dp"
+            android:layout_height="61dp"
+            android:text="Get out"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+
 
     <ImageView
         android:id="@+id/imageView"
-        app:srcCompat="@drawable/greenegg" />
+        android:contentDescription="egg"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/green_egg"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
