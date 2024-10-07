@@ -36,10 +36,12 @@ public class MainActivity extends AppCompatActivity {
             counter--;
             TextView counterTextview = findViewById(R.id.textview_counter);
             counterTextview.setText(""+counter);
-        if (counter ==0){
+
+
+        }
+        if (counter ==0) {
             @SuppressLint("WrongViewCast") ImageView eggImageView = findViewById(R.id.imageview_egg);
             eggImageView.setImageResource(R.drawable.green_dragonsuprize);
-        }
         }
     }
 
